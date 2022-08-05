@@ -1,9 +1,9 @@
 x = 1;
-//число генерится
 let Num_comp = Math.floor(Math.random() * 100) + 1;
-// получим кнопку и сохраним ссылку на неё в переменную
-const btn = document.querySelector("#my-btn");
-// добавим к обработчик события click
+// получаем кнопку и сохраним ссылку на неё в переменную
+const btn = document.querySelector(".buttonOk");
+const result = document.querySelector(".result");
+
 btn.onclick = function () {
   alert(`Вы кликнули на кнопку!`);
   text = +document.querySelector(".Input").value;
@@ -12,13 +12,17 @@ btn.onclick = function () {
   //  console.log(text, Num_comp);
   if (text === Num_comp) {
     document.querySelector(".result").innerHTML = "YOU WIN";
+    //    document.body.style.backgroundColor = green;
+
     alert("YOU WIN");
     location.reload();
   } else {
     if (text > Num_comp) {
-      document.querySelector(".result").innerHTML = "is above";
+      result.innerHTML = "Ваше число больше";
+      result.style.backgroundColor = "blue";
     } else {
-      document.querySelector(".result").innerHTML = "is low";
+      result.innerHTML = "Ваше число меньше";
+      result.style.backgroundColor = "red";
     }
   }
 };
