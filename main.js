@@ -11,18 +11,17 @@ btn.onclick = function () {
   document.querySelector(".ssi").innerHTML += " " + text;
   //  console.log(text, Num_comp);
   if (text === Num_comp) {
-    document.querySelector(".result").innerHTML = "YOU WIN";
-    //    document.body.style.backgroundColor = green;
-
+    result.innerHTML = "Ваше число больше";
+    result.style.backgroundColor = "Lime";
     alert("YOU WIN");
     location.reload();
   } else {
     if (text > Num_comp) {
       result.innerHTML = "Ваше число больше";
-      result.style.backgroundColor = "blue";
+      result.style.backgroundColor = "IndianRed";
     } else {
       result.innerHTML = "Ваше число меньше";
-      result.style.backgroundColor = "red";
+      result.style.backgroundColor = "LightCoral";
     }
   }
 };

@@ -1,8 +1,8 @@
 body{
+    font-family: sans-serif;
     background-color:#d9d9d9;
 }
 .h1{
-    font-family: sans-serif;
     font-size: 40px;
         color:blue;
         border: 0;
@@ -12,21 +12,18 @@ body{
 .buttonLabel {
     margin-top: 50px;
     margin-left: 60px;
-    font-family: sans-serif;
     font-size: 28px;
 }
 .Input{
     margin-left: 20px;
     width: 140px;
     height: 40px;
-    font-family: sans-serif;
     font-size: 24px;
     }
 .buttonOk{
     width: 240px;
     height: 40px;
     background: #2196F3;
-    font-family: sans-serif;
     color:#fff;
    border: none;
     font-size: 24px;
@@ -58,4 +55,5 @@ font-size: 28px;
 
 .ssi{
 font-size: 28px;
+padding-left: 60px;
 }
