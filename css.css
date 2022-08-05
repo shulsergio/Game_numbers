@@ -54,6 +54,7 @@ font-size: 28px;
 }
 
 .ssi{
+visibility: hidden;
 font-size: 28px;
 padding-left: 60px;
 }
