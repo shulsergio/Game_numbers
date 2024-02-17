@@ -16,8 +16,6 @@ btn.onclick = function () {
     result.innerHTML = "You LOSE! 10 times input";
     result.style.backgroundColor = "red";
     alert("YOU LOSE");
-
-    setTimeout(location.reload(), 100000000);
   }
   text = +document.querySelector(".Input").value;
   document.querySelector(".ssi").style.visibility = "visible";
