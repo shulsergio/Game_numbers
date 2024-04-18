@@ -4,11 +4,6 @@ let Num_comp = Math.floor(Math.random() * 100) + 1;
 const btn = document.querySelector(".buttonOk");
 const result = document.querySelector(".result");
 
-/*function Over() {
-  document.querySelector(".ssi").style.visibility = "visible";
-  document.querySelector(".ssi").innerHTML += " " + text;
-}*/
-
 btn.onclick = function () {
   x++;
   alert(`You input - ${x} times!`);
@@ -18,8 +13,8 @@ btn.onclick = function () {
     alert("YOU LOSE");
   }
   text = +document.querySelector(".Input").value;
-  document.querySelector(".ssi").style.visibility = "visible";
-  document.querySelector(".ssi").innerHTML += " " + text;
+  document.querySelector(".text-vvod").style.visibility = "visible";
+  document.querySelector(".text-vvod").innerHTML += ", " + text;
   //  console.log(text, Num_comp);
   if (text === Num_comp) {
     result.innerHTML = "YOU WIN";
@@ -28,10 +23,10 @@ btn.onclick = function () {
     setTimeout(location.reload(), 100000000);
   } else {
     if (text > Num_comp) {
-      result.innerHTML = "Число больше/ Number above";
+      result.innerHTML = "Ваше число больше";
       result.style.backgroundColor = "IndianRed";
     } else {
-      result.innerHTML = "Число меньше/ Number small";
+      result.innerHTML = "Ваше число меньше";
       result.style.backgroundColor = "LightCoral";
     }
   }

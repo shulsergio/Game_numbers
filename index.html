@@ -2,21 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css.css" type="text/css" />
 
-    <title>Угадай число</title>
+    <!-- шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Спочатку нормалізатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+
+    <title>Games</title>
   </head>
   <body>
-    <h1 class="h1">Игра угадай число / Guess the number</h1>
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html" class="company-logo">
+          shulga <span class="company-logo-span">company</span>
+        </a>
+        <button type="button" class="open-menu-btn">
+          <svg width="24" height="24">
+            <use href="./img/icons.svg#icon-solid-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section hero">
+        <div class="container hero-container">
+          <h1 class="header-one">
+            Простые игры для <span class="header-one-span">детей</span>
+          </h1>
+        </div>
+      </section>
+      <section class="section number-section">
+        <div class="container number-container">
+          <h2 class="title-header">Угадай число</h2>
+          <ul class="types">
+            <li class="numb-list">
+              <div class="block">
+                <a href="#" class="media-item">
+                  <svg width="32" height="32" class="media-svg">
+                    <use href="./img/icons.svg#icon-clock"></use>
+                  </svg>
+                </a>
+                <h3 class="title-three">Правила</h3>
+              </div>
+              <p class="text-rules">
+                Компьютер загадал число, от 1 до 100. Задача угадать число с
+                наименьшего количества попыток
+              </p>
+            </li>
+            <li class="number-list">
+              <div class="block">
+                <a href="#" class="media-item">
+                  <svg width="32" height="32" class="media-svg">
+                    <use href="./img/icons.svg#icon-clock"></use>
+                  </svg>
+                </a>
+                <h3 class="title-three">Вводи число</h3>
+              </div>
+              <div class="game-block">
+                <label class="buttonLabel">
+                  <input class="Input" type="number" placeholder="00" />
+                  <button class="buttonOk" id="my-btn">OK</button>
+                </label>
+                <p class="text-vvod">Вы ввели число</p>
+                <p class="result"></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section city-section">
+        <div class="container city-container">
+          <h2 class="title-header">Города</h2>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <!-- -- modal-->
 
-    <label class="buttonLabel">Please Input</label>
-    <input class="Input" type="number" placeholder="00" />
-    <button class="buttonOk" id="my-btn"><p>Enter</p></button>
-    <p class="result"></p>
-    <p class="ssi">You input -</p>
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="close-btn">
+          <svg class="close-svg" width="8" height="8">
+            <use
+              class="icon-close-black1"
+              href="./img/icons.svg#icon-close-black1"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <script src="./main.js"></script>
   </body>
 </html>
+<!-- 
+<h1 class="h1">Игра угадай число / Guess the number</h1>
+
+<label class="buttonLabel">Please Input</label>
+<input class="Input" type="number" placeholder="00" />
+<button class="buttonOk" id="my-btn"><p>Enter</p></button>
+<p class="result"></p>
+<p class="ssi">You input -</p> -->
